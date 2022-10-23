@@ -271,52 +271,62 @@ button {
 }
 
 .people-icon {
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .people-icon:not(first-of-type) {
   margin-left: 10px;
   margin-bottom: 30px;
 }
+.people-icon-link {
+  border-radius: 50%;
+  padding: 10px 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.people-icon-link:hover,
+.people-icon-link:focus {
+  background-color: var(--hover-color);
+}
 .people-svg {
   fill: var(--icon-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.people-icon:hover svg,
-.people-icon:focus svg {
+.people-icon-link:hover svg,
+.people-icon-link:focus svg {
   fill: var(--main-text-color);
-}
-.people-icon:hover,
-.people-icon:focus {
-  background-color: var(--hover-color);
 }
 .client-icons {
   display: flex;
   justify-content: center;
   margin-bottom: 95px;
 }
-.icon-logo {
-  padding: 16px 32px;
+.icon-logo-link {
+  display: block;
   border: 1px solid #afb1b8;
+  padding: 16px 32px;
   border-radius: 4px;
-  fill: var(--icon-fill);
-  transition-property: border;
+  transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-logo:hover,
-.icon-logo:focus {
-  border: 1px solid var(--hover-color);
+.icon-logo {
+  fill: var(--icon-fill);
+}
+.icon-logo-link:hover,
+.icon-logo-link:focus {
+border: 1px solid var(--hover-color);
+}
+.icon-logo-link:hover svg,
+.icon-logo-link:focus svg {
   fill: var(--hover-color);
 }
 
-.icon-logo:not(first-of-type) {
+.icon-logo-link:not(first-of-type) {
   margin-left: 30px;
 }
 
@@ -332,7 +342,7 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--title-color);
-  transition-property: color;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -340,6 +350,7 @@ button {
 .link:hover,
 .link:focus {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 
 .contact:hover svg,
@@ -477,7 +488,7 @@ footer {
 .footer-icon:focus {
   background-color: var(--hover-color);
 }
-.footer-icon:not(:first-of-type) {
+.footer-icon-item:not(:first-of-type) {
     margin-left: 10px;
 }
 .footer-svg {
