@@ -299,43 +299,43 @@
             <div class="container">
                 <h2 class="second-title">Постійні клієнти</h2>
                 <ul class="list client-icons">
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo-5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="icon-logo-link">
+                    <li class="icon-logo-list">
+                        <a href="" class="icon-logo-link svg-link">
                             <svg width="106px" height="60px" class="icon-logo">
                                 <use href="./images/sprite.svg#icon-logo-6"></use>
                             </svg>
@@ -407,11 +407,35 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form action="">
+            <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
+            <div class="form-element">
+                <label for="name">Ім'я</label>
+                <input type="name" id="name" >
+            </div>
+            <div class="form-element">
+                <label for="tel">Телефон</label>
+                <input type="tel" id="tel">
+            </div>
+            <div  class="form-element">
+                <label for="email">Пошта</label>
+                <input type="email" id="email" >
+            </div>
+            <div class="form-element">
+                <label for="text">Коментар</label>
+                <textarea name="text" id="text" placeholder="Введіть текст" ></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="accept" name="accept" required checked>
+                <label for="accept">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>
+            <button type="submit" class="submit-button">Відправити</button>
             <button type="button" class="close-button" data-modal-close>
                 <svg width="11px" height="11px" class="modal-button">
                     <use href="./images/sprite.svg#icon-vector"></use>
                 </svg>
             </button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

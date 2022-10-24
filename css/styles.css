@@ -89,8 +89,14 @@ button {
 .header-svg {
   fill: var(--icon-fill);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.header-icons:hover svg
+.header-icons:focus svg {
+  fill: var(--hover-color);
+}
 .telefon {
   margin-left: 30px;
 }
@@ -310,30 +316,25 @@ button {
   border: 1px solid #afb1b8;
   padding: 16px 32px;
   border-radius: 4px;
-  transition-property: border, fill;
+  color: var(--icon-fill);
+  transition-property: border, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-logo {
-  fill: var(--icon-fill);
+  fill: currentColor;
 }
 .icon-logo-link:hover,
 .icon-logo-link:focus {
-border: 1px solid var(--hover-color);
+  border: 1px solid var(--hover-color);
+  color: var(--hover-color);
 }
-.icon-logo-link:hover svg,
-.icon-logo-link:focus svg {
-  fill: var(--hover-color);
-}
-
 .icon-logo-link:not(first-of-type) {
   margin-left: 30px;
 }
-
 .list {
   list-style: none;
 }
-
 .link {
   font-style: normal;
   font-weight: 500;
@@ -407,7 +408,8 @@ border: 1px solid var(--hover-color);
   transition: transform 250ms;
   transform: translateY(100%);
 }
-.portfolio-list-item:hover .card-text {
+.portfolio-list-item:hover .card-text
+.portfolio-list-item:focus .card-text {
   transform: translateY(0);
 }
 .description-wrap {
@@ -549,6 +551,7 @@ footer {
 .modal {
   width: 528px;
   height: 581px;
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -558,6 +561,15 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.modal-heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 12px;
+}
 .close-button {
   position: absolute;
   right: 8px;
@@ -566,4 +578,43 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--main-text-color);
   padding: 6px 10px;
+  cursor: pointer;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+.form-element label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+.form-element input {
+  border: none;
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.submit-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 52px;
+  color: var(--main-text-color);
+  margin: 0 auto;
+  cursor: pointer;
 }
