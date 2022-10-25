@@ -408,7 +408,7 @@ button {
   transition: transform 250ms;
   transform: translateY(100%);
 }
-.portfolio-list-item:hover .card-text
+.portfolio-list-item:hover .card-text,
 .portfolio-list-item:focus .card-text {
   transform: translateY(0);
 }
