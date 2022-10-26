@@ -1,0 +1,27 @@
+.clients__icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+    list-style: none;
+        &-link {
+            display: block;
+            border: 1px solid #afb1b8;
+            padding: 16px 32px;
+            border-radius: 4px;
+            color: var(--icon-fill);
+            transition-property: border, color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &-link:hover,
+        &-link:focus {
+            border: 1px solid var(--hover-color);
+            color: var(--hover-color);
+                }
+        &-link:not(first-of-type) {
+            margin-left: 30px;
+                }
+        &--logo {
+            fill: currentColor;
+        }
+}

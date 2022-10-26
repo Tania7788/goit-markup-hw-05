@@ -1,0 +1,99 @@
+.portfolio {
+    padding-top: 95px;
+    padding-bottom: 65px;
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+        &__button {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--title-color);
+            cursor: pointer;
+            padding: 6px 22px;
+            border: #f5f4fa;
+            border-radius: 4px;
+            margin-left: 8px;
+            background-color: #f5f4fa;
+            transition-property: color, background-color, box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &__button:hover,
+        &__button:focus {
+            color: var(--main-text-color);
+            background-color: var(--hover-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__list-item {
+            margin-bottom: 30px;
+            border: 1px solid #eeeeee;
+            max-width: 370px;
+            transition-property: box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &__list-item:hover,
+        &__list-item:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        &__list-item:hover &__card-text,
+        &__list-item:focus &__card-text {
+            transform: translateY(0);
+        }
+        &__card {
+            position: relative;
+            overflow: hidden;
+        }
+        &__card img {
+            display: block;
+        }
+        &__card-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            color: var(--main-text-color);
+            background: rgba(33, 150, 243, 0.9);
+            padding: 63px 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            transition: transform 250ms;
+            transform: translateY(100%);
+        }
+        &__description {
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 36px;
+            letter-spacing: 0.03em;
+            color: var(--title-color);
+            padding-bottom: 2px;
+        }
+        &__title-description {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            color: var(--secondary-text-color);
+            padding-bottom: 2px;
+        }
+}

@@ -1,0 +1,123 @@
+footer {
+    background-color: var(--main-background);
+}
+
+.footer-wrap {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo {
+    padding-top: 60px;
+}
+
+.footer-list {
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+.footer-links {
+    display: block;
+    padding-bottom: 10px;
+}
+.address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.second-footer-word {
+    color: var(--main-text-color);
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+        &-list {
+            margin-left: 70px;
+        }
+}
+
+.footer-icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--hover-color);
+        }
+        &-item:not(:first-of-type) {
+            margin-left: 10px;
+        }
+}
+
+.footer-svg {
+    fill: var(--main-text-color);
+}
+.footer-form {
+    display: flex;
+    margin-top: 10px;
+        &-list {
+            margin-left: 93px;
+        }
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    background: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            padding-left: 16px;
+        }
+}
+.footer-submit {
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: none;
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+        svg {
+            margin-left: 10px;
+        }
+}

@@ -1,0 +1,31 @@
+.doings-section {
+    margin-top: 95px;
+    padding-bottom: 95px;
+}
+
+.list-photo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-wrap {
+    position: relative;
+    img {
+            display: block;
+        }
+}
+.photo-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 107px;
+    white-space: nowrap;
+}
