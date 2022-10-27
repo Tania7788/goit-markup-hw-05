@@ -49,9 +49,12 @@
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
         }
-        &__list-item:hover &__card-text,
-        &__list-item:focus &__card-text {
-            transform: translateY(0);
+        &__list-link {
+            text-decoration: none;
+        }
+        &__list-link:hover &__card-text,
+        &__list-link:focus &__card-text {
+            transform: translateY(0); 
         }
         &__card {
             position: relative;
@@ -87,6 +90,7 @@
             letter-spacing: 0.03em;
             color: var(--title-color);
             padding-bottom: 2px;
+            text-decoration: none;
         }
         &__title-description {
             font-weight: 400;

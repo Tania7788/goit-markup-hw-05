@@ -550,7 +550,10 @@ button {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.portfolio__list-item:hover .portfolio__card-text, .portfolio__list-item:focus .portfolio__card-text {
+.portfolio__list-link {
+  text-decoration: none;
+}
+.portfolio__list-link:hover .portfolio__card-text, .portfolio__list-link:focus .portfolio__card-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -592,6 +595,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--title-color);
   padding-bottom: 2px;
+  text-decoration: none;
 }
 .portfolio__title-description {
   font-weight: 400;
